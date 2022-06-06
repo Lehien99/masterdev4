@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/Styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Responsive Checkout Form</h1>
+            <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two
+                cokumns
+                stack on top of each other instead of next to each other</p>
+        </div>
+    </header>
+    <section>
+        <div class="section">
+            <div class="colum_1 col-8">
+                <form action="" class="form" method="POST" id="form-1" onsubmit="myFunction()">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="title">
+                                    <h1>Billing Address</h1>
+                                </div>
+                                <div class=" form-group">
+                                    <p>FullName</p>
+                                    <input id="fullname" class="form-control" name="fullname" type="text"
+                                        placeholder="John M. Doe">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <p>Email</p>
+                                    <input id="email" class="form-control" name="email" type="text"
+                                        placeholder="John@examplae.com">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <p>Address</p>
+                                    <input id="address" class="form-control" name="Address" type="text"
+                                        placeholder="542 W.15th Street">
+                                </div>
+                                <div class="form-group">
+                                    <p>City</p>
+                                    <input class="form-control" type="text" placeholder="New York">
+                                </div>
+                                <div class="forms-groups">
+                                    <div class="State">
+                                        <p>State</p>
+                                        <input type="text" class="form-control" placeholder="NY">
+                                    </div>
+                                    <div class="Zip">
+                                        <p>Zip</p>
+                                        <input id="Zip" type="text" class="form-control" placeholder="10001">
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="title">
+                                    <h1>Payment</h1>
+                                </div>
+                                <div class=" form-group">
+                                    <p> Accepted Cards</p>
+                                    <div class="icon">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                        <i class="fa-brands fa-cc-paypal"></i>
+                                        <i class="fa-brands fa-cc-jcb"></i>
+                                        <i class="fa-brands fa-cc-apple-pay"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p>Name on card</p>
+                                    <input id="Name" type="text" class="form-control" placeholder="John More Doe">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <p>Credit card number</p>
+                                    <input id="card" type="text" class="form-control" placeholder="1111-2222-3333-4444">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <p>Exp Month</p>
+                                    <input type="text" class="form-control" placeholder="September">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="forms-groups">
+                                    <div class="ExpYear">
+                                        <p>Exp Year</p>
+                                        <input id="ExpYear" type="text" class="form-control" placeholder="2016">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="CVV">
+                                        <p>CVV</p>
+                                        <input id="CVV" type="text" class="form-control" placeholder="352">
+                                        <span class="form-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="Check-box">
+                            <label for=""><input type="checkbox"> </label><label for="">Shipping address same as
+                                billing</label>
+                        </label>
+                    </div>
+                    <input id="submit" type="button" value="Continue to checkouts">
+                </form>
+            </div>
+            <div class=" colum_2 col-4">
+                <div class="container">
+                    <div class="colum">
+                        <div class=" col-6">
+                            <p>
+                                Cart
+                            </p>
+                        </div>
+                        <div class="salary col-6 ">
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="col-6"><a href="#" target="_blank" rel="noopener noreferrer">product 1</a>
+                        </div>
+                        <div class="salary col-6">
+                            <p>$15</p>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="col-6"><a href="#" target="_blank" rel="noopener noreferrer">product 2</a>
+                        </div>
+                        <div class="salary col-6">
+                            <p>$5</p>
+                        </div>
+                    </div>
+                    <div class=" colum">
+                        <div class=" col-6"><a href="#" target="_blank" rel="noopener noreferrer">product 3</a>
+                        </div>
+                        <div class="salary col-6">
+                            <p>$8</p>
+                        </div>
+                    </div>
+                    <div class=" colum">
+                        <div class=" col-6"><a href="#" target="_blank" rel="noopener noreferrer">product 4</a>
+                        </div>
+                        <div class="salary col-6">
+                            <p>$2</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="  colum">
+                        <div class=" col-6">
+                            <p><b>Total</b></p>
+                        </div>
+                        <div class="salary col-6">
+                            <p>
+                                <span>
+                                    <b>$30</b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="article">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>fullName</th>
+                        <th>Address</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody class="show">
+
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <script src="https://kit.fontawesome.com/44129f0170.js" crossorigin="anonymous"></script>
+    <script src="./validator.js"></script>
+    <script>
+        var dsCustomer = [];
+        var btn = document.getElementById('submit');
+        btn.addEventListener('click', function () {
+            var fullname = document.getElementById('fullname').value;
+            var address = document.getElementById('address').value;
+            var email = document.getElementById('email').value;
+            if (fullname !== "" && address !== "" && email !== "") {
+                var customer = new personal(fullname, address, email);
+                dsCustomer.push(customer)
+                // console.log(dsCustomer);
+                document.querySelector('.show').innerHTML = showDs();
+            }
+        });
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#Name'),
+                Validator.isNumber('#card'),
+                Validator.isRequired('#ExpYear'),
+                Validator.isRequired('#CVV'),
+                Validator.isRequired('#Zip'),
+                Validator.isLenght('#CVV', 3, 4),
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

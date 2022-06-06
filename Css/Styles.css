@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;
+}
+.header, .article{
+    padding: 12px;
+}
+.title{
+    padding: 0px 10px;
+}
+.colum_1, .colum_2{
+    background-color: lightgray;
+}
+.colum_2{
+    height: 350px;
+}
+
+.section,.row,.forms-groups,.colum{
+    display: flex;
+    flex-direction: row;   
+}
+
+input[type=text], input[type= submit]{
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 0.25rem;
+}
+input[type=button]{
+    outline: none;
+    background-color: #00b74a;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.icon{
+    padding: 11px 0px ;
+
+}
+.col-8{
+    flex: 60%;  
+}
+.col-4{
+    flex: 30%; 
+}
+.col-6{
+    flex: 50%;
+}
+.col-4,.col-8{
+    padding: 12px;
+    margin: 12px;
+}
+.form-group,.forms-groups{
+    padding: 10px;
+    height: 118px;;
+}
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+}
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+.ExpYear,.CVV,.State,.Zip{
+    flex: 50%;  
+}
+.CVV,.Zip{
+    padding-left: 10px;
+}
+.ExpYear,.State{
+    padding-right: 10px;
+}
+
+.form-group.invalid .form-control{
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+.Zip.invalid .form-control, .ExpYear.invalid .form-control, .CVV.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.container .colum{
+    padding: 0px 30px ;
+}
+.container + div{
+    padding: 10px 0px;
+}
+.salary > p{
+    text-align: end;
+}
+
+
+@media only screen and (max-width: 800px){
+    .section,.row,.forms-groups{
+        display: block;
+    }
+    .CVV,.Zip,.ExpYear,.State{
+        padding: 0;
+    }
+
+    .form-group,.forms-groups,.colum_2{
+        height: auto;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+  
+td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+}
+  
+th {
+    background-color: rgb(235,235,235);
+}
+  
+table td {
+    text-align: center;
+}
+  
+tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+}
+  
+tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+}
+  
+caption {
+    padding: 10px;
+}
+.bold{
+    color: black;
+}
+  
